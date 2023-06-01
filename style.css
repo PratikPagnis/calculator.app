@@ -102,6 +102,10 @@ h1{
     color: #232323;
 }
 
+.operator:active{
+    background-color: #ffef78;
+}
+
 .calc-button:last-child{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
