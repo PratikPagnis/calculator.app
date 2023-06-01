@@ -1,88 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+    </style>
     <title>Calculator App</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <section class="screen">
-            0
-        </section>
+      <h1>Calculator</h1>
+      <input class="screen" placeholder="0" id="output-screen" disabled />
 
-        <section class="calc-buttons">
-            <div class="calc-button-row">
-                <button class="calc-button double">
-                    C
-                </button>
-                <button class="calc-button">
-                    ←
-                </button>
-                <button class="calc-button">
-                    ÷
-                </button>
-            </div>
+      <section class="calc-buttons">
+        <div class="calc-button-row">
+          <button class="operator" onclick="Clear()">AC</button>
+          <button class="operator" onclick="Del()">DL</button>
+          <button class="operator" onclick="display('.')">.</button>
+          <button class="calc-button" onclick="display('/')">/</button>
+        </div>
 
-            <div class="calc-button-row">
-                <button class="calc-button">
-                    7
-                </button>
-                <button class="calc-button">
-                    8
-                </button>
-                <button class="calc-button">
-                    9
-                </button>
-                <button class="calc-button">
-                    ×
-                </button>
-            </div>
+        <div class="calc-button-row">
+          <button class="calc-button" onclick="display('7')">7</button>
+          <button class="calc-button" onclick="display('8')">8</button>
+          <button class="calc-button" onclick="display('9')">9</button>
+          <button class="calc-button" onclick="display('*')">*</button>
+        </div>
 
-            <div class="calc-button-row">
-                <button class="calc-button">
-                    4
-                </button>
-                <button class="calc-button">
-                    5
-                </button>
-                <button class="calc-button">
-                    6
-                </button>
-                <button class="calc-button">
-                    -
-                </button>
-            </div>
+        <div class="calc-button-row">
+          <button class="calc-button" onclick="display('4')">4</button>
+          <button class="calc-button" onclick="display('5')">5</button>
+          <button class="calc-button" onclick="display('6')">6</button>
+          <button class="calc-button" onclick="display('-')">-</button>
+        </div>
 
-            <div class="calc-button-row">
-                <button class="calc-button">
-                    1
-                </button>
-                <button class="calc-button">
-                    2
-                </button>
-                <button class="calc-button">
-                    3
-                </button>
-                <button class="calc-button">
-                    +
-                </button>
-            </div>
+        <div class="calc-button-row">
+          <button class="calc-button" onclick="display('1')">1</button>
+          <button class="calc-button" onclick="display('2')">2</button>
+          <button class="calc-button" onclick="display('3')">3</button>
+          <button class="calc-button" onclick="display('+')">+</button>
+        </div>
 
-            <div class="calc-button-row">
-                <button class="calc-button triple">
-                    0
-                </button>
-                <button class="calc-button">
-                    =
-                </button>
-            </div>
-        </section>
+        <div class="calc-button-row">
+          <button class="calc-button" onclick="display('00')">00</button>
+          <button class="calc-button" onclick="display('0')">0</button>
+          <button class="calc-button double" onclick="Calculate()">=</button>
+        </div>
+      </section>
     </div>
-    
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
