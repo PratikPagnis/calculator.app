@@ -44,6 +44,7 @@ h1{
     background: rgba(255, 255, 255, 0.75);
     border-radius: 18px 18px 0 0;
     padding: 20px;
+    color: #232323;
 }
 
 .screen{
@@ -58,6 +59,7 @@ h1{
     text-align: right;
     width: 358px;
     height: 140px;
+    border-bottom: 1px solid #FE9920;
 }
 
 .calc-buttons{
